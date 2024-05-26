@@ -12,32 +12,44 @@ public class JogoDaAdivinhacao {
 
         int numero;
         int escolher;
-        int chancesF = 5900;
-        int chancesM = 30;
-        int chancesD = 10;
+        int chancesF = 32;
+        int chancesM = 17;
+        int chancesD = 7;
         int aleatorio = random.nextInt(100);
 
-        System.out.println("Ola!! voce esta no jogo da adivinhacao");
-        System.out.println("MODOS:");
-        System.out.println("1. FACIL: numero de 1 a 100, infinitas tentativas");
-        System.out.println("2. MEDIO: numero 1 a 100, 30 tentativas");
-        System.out.println("3. DIFICIL: numero 1 a 100, 10 tentativas");
+        System.out.println("====================");
+        System.out.println("Bem vindo ao jogo de ADIVINHACAO");
+        System.out.print("O JOGO: ");
+        System.out.println(" A interface escolhera um numero aleatorio de 1 a 100 para voce acertar com suas tentativas. ");
+        System.out.println("MODOS DE JOGO:");
+        System.out.println("1. FACIL: numeros de 1 a 100, 30 tentativas");
+        System.out.println("2. MEDIO: numeros 1 a 100, 15 tentativas");
+        System.out.println("3. DIFICIL: numeros 1 a 100, 5 tentativas");
+        System.out.println("====================");
+        System.out.print("Escolha o MODO: ");
         escolher = ler.nextInt();
+        System.out.println("====================");
 
         switch (escolher) {
             case 1:
                 for (int i = 1; i < chancesF; i++) {
 
-                    System.out.println("Qual sua aposta?");
+                    System.out.println("Qual seu palpite?");
                     numero = ler.nextInt();
 
                     if (numero == aleatorio) {
                         System.out.println("Voce acertou!! parabens!!");
+                        System.out.println("====================");
+
                         break;
                     } else if (numero < aleatorio) {
                         System.out.println("Tente um numero maior");
+                        System.out.println("====================");
+
                     } else if (numero > aleatorio) {
                         System.out.println("Tente um numero menor");
+                        System.out.println("====================");
+
                     }
 
                     System.out.println("Voce esta na tentatica: " + i);
@@ -47,16 +59,22 @@ public class JogoDaAdivinhacao {
             case 2:
                 for (int i = 1; i < chancesM; i++) {
 
-                    System.out.println("Qual sua aposta?");
+                    System.out.println("Qual seu palpite?");
                     numero = ler.nextInt();
 
                     if (numero == aleatorio) {
                         System.out.println("Voce acertou!! parabens!!");
+                        System.out.println("====================");
+
                         break;
                     } else if (numero < aleatorio) {
                         System.out.println("Tente um numero maior");
+                        System.out.println("====================");
+
                     } else if (numero > aleatorio) {
                         System.out.println("Tente um numero menor");
+                        System.out.println("====================");
+
                     }
 
                     System.out.println("Voce esta na tentatica: " + i);
@@ -68,16 +86,22 @@ public class JogoDaAdivinhacao {
             case 3:
                 for (int i = 1; i < chancesD; i++) {
 
-                    System.out.println("Qual sua aposta?");
+                    System.out.println("Qual seu palpite?");
                     numero = ler.nextInt();
 
                     if (numero == aleatorio) {
                         System.out.println("Voce acertou!! parabens!!");
+                        System.out.println("====================");
+
                         break;
                     } else if (numero < aleatorio) {
                         System.out.println("Tente um numero maior");
+                        System.out.println("====================");
+
                     } else if (numero > aleatorio) {
                         System.out.println("Tente um numero menor");
+                        System.out.println("====================");
+
                     }
 
                     System.out.println("Voce esta na tentatica: " + i);
