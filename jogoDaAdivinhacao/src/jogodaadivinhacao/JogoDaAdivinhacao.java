@@ -145,7 +145,7 @@ public class JogoDaAdivinhacao {
                         }
 
                         System.out.println("Voce esta na tentativa: " + i);
-
+                        
                     }
 
                     break;
