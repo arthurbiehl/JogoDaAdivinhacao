@@ -18,9 +18,21 @@ public class JogoDaAdivinhacao {
             int chancesM = 17;
             int chancesD = 7;
             int aleatorio = random.nextInt(100);
+            String nome;
 
+            System.out.println("Antes do jogo, qual seu Nome?");
+            nome = ler.nextLine();
             System.out.println("====================");
+            System.out.println("Ola, " + nome + "");
             System.out.println("Bem vindo ao jogo de ADIVINHACAO");
+            System.out.println("Voce quer comecar a jogar? 1.SIM | 2.NAO");
+            escolher = ler.nextInt();
+            if(escolher == 1){
+                System.out.println("VAMOOO!!");
+            }else{
+                System.out.println("ADIOS");
+                break;
+            }
             System.out.print("O JOGO: ");
             System.out.println(" A interface escolhera um numero aleatorio de 1 a 100 para voce acertar com suas tentativas. ");
             System.out.println("MODOS DE JOGO:");
